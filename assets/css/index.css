@@ -1,0 +1,345 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary-color: #4473c5;
+  --primary-color-hover: #0c419e;
+  --secondry-color: #213864;
+  --padding-lg-section: 120px;
+  --padding-md-section: 50px;
+}
+
+body {
+  direction: rtl;
+  font-family: 'Cairo', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+a {
+  color: black !important;
+  text-decoration: none;
+}
+a:hover {
+  color: black !important;
+}
+ul {
+  padding: 0 !important;
+  margin: 0 !important;
+  list-style: none;
+}
+textarea {
+  resize: none;
+}
+/* Components  */
+.sec-padding {
+  padding-top: var(--padding-md-section) !important;
+}
+.sec-title {
+  background-color: var(--primary-color);
+  width: fit-content;
+  font-size: 17px;
+  padding: 13px;
+}
+.sec-title::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: -30px;
+  transform: translateY(-50%);
+  width: 13px;
+  height: 13px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+}
+.sec-title::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -30px;
+  transform: translateY(-50%);
+  width: 13px;
+  height: 13px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+}
+
+button:not(button.navbar-toggler) {
+  background-color: var(--primary-color) !important;
+  color: white !important;
+}
+.form-control:focus,
+select:focus {
+  box-shadow: none !important;
+  border-color: var(--primary-color);
+}
+/* start Header  */
+header {
+  background-color: #deeaf6;
+}
+header .sign-btns a {
+  color: #925f7e;
+  font-size: 18px;
+}
+@media (max-width: 567px) {
+  header .sign-btns a {
+    font-size: 17px;
+  }
+}
+header .sign-btns a.active {
+  color: var(--primary-color) !important;
+}
+header .header-content .phone i {
+  transform: rotate(-45deg);
+  font-size: 20px;
+}
+nav {
+  z-index: 99;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.103);
+}
+nav li a {
+  font-weight: 500;
+}
+nav li a.active {
+  color: var(--primary-color) !important;
+  font-weight: bold;
+}
+/* end Header  */
+
+.logos {
+  border-bottom: 2px solid black;
+}
+
+/* Start Profile  */
+
+.form {
+  padding-top: var(--padding-md-section);
+  padding-bottom: 30px;
+}
+.profile .links {
+  border-left: 1px solid rgba(26, 26, 26, 0.151);
+  border-top: 1px solid rgba(26, 26, 26, 0.151);
+  margin-top: var(--padding-md-section);
+}
+.profile .links a {
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.041);
+  font-size: 17px;
+}
+.profile .links a.active {
+  color: var(--primary-color) !important;
+  border-color: var(--primary-color);
+}
+@media (max-width: 992px) {
+  .profile .links {
+    width: 100%;
+  }
+  .profile .links ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  .profile .links a {
+    font-size: 14px;
+  }
+}
+
+/* end Profile  */
+
+
+/* Start Terms  */
+
+.terms .term-box {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--secondry-color);
+  color: white !important;
+  transition: 0.3s;
+}
+.terms .term-box:hover {
+  background-color: var(--primary-color-hover);
+}
+
+/* end Terms  */
+
+/* Start Contact us  */
+.contact textarea {
+  height: 120px;
+}
+.contact .contact-content {
+  padding-top: var(--padding-md-section);
+}
+.contact-phone {
+  color: var(--primary-color);
+}
+/* end Contact us  */
+
+
+/* Start Login   */
+.right-sec {
+  background-color: #f2f6ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.right-sec .form {
+  width: 450px;
+  max-width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 60px 20px 15px;
+}
+
+.login-sections {
+  height: calc(100vh - 105px);
+}
+@media (max-width: 767px) {
+  .login-sections {
+    height: calc(100vh - 150px);
+  }
+  .right-sec {
+    width: 100%;
+    background-color: white;
+  }
+  .right-sec .form {
+    padding: 0;
+    background-color: none;
+    box-shadow: none;
+  }
+}
+
+/* end Login   */
+
+
+/* Start Support Company */
+.support-company {
+  padding-top: var(--padding-lg-section);
+}
+.support-company img {
+  width: 150px;
+}
+
+@media (min-width: 567px) {
+  .company-content {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+  .company-info {
+    border-right: 1px solid rgba(0, 0, 0, 0.158);
+  }
+}
+.company-logo {
+  width: 250px;
+  height: 150px;
+  object-fit: contain;
+}
+.companys-logo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.card {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.card .card-img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.192);
+  padding: 10px;
+}
+
+/* end Support Company */
+
+
+
+/* Start Exam  */
+.exam-ques .ques-title {
+  color: var(--secondry-color);
+  font-weight: bold;
+}
+.exam-ques .answer {
+  width: 100%;
+}
+.exam-ques .answer-label {
+  width: 100%;
+  background-color: #eeeeee;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 18px;
+  word-break: break-all;
+  padding: 12px 35px 12px 12px ;
+}
+.exam-ques .answer-label.correct-answer, 
+.exam-ques .answer-label.correct-answer:hover {
+  color: #0f5132;
+  background-color: #addac5;
+  border-color: #badbcc;
+} 
+.exam-ques .answer-label.wrong-answer, 
+.exam-ques .answer-label.wrong-answer:hover{
+  color: #842029;
+  background-color: #f8d7da;
+  border-color: #f5c2c7;
+} 
+.exam-ques .answer-label:hover, .exam-ques input:checked + label  {
+  background-color: #add3fd;
+}
+
+ .checkmark {
+  position: absolute;
+  top: 50%;
+  right: 15px; 
+  transform: translateY(-50%);
+  height: 19px;
+  width: 19px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.checkmark:after {
+  content: '';
+  position: absolute;
+  top: 6px;
+    left: 6px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: white;
+}
+.exam-ques input:checked  + label  .checkmark {
+  background-color: #2196f3;
+}
+
+@media (min-width: 668px) {
+  .exam-ques {
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 20px 30px;
+  }
+}
+/* End Exam  */
+
+
+/* Start Achive */
+.achive .box a {
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--secondry-color);
+  color: white !important;
+  transition: 0.3s;
+}
+/* End Achive */
