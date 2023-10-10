@@ -11,6 +11,7 @@ var swiper = new Swiper('.support-company-swiper', {
   autoplay: {
     delay: 2000,
   },
+  speed: 1000,
   breakpoints: {
     0: {
       slidesPerView: 1,
