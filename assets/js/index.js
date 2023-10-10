@@ -8,22 +8,25 @@ var swiper = new Swiper('.support-company-swiper', {
     el: '.swiper-pagination',
     clickable: true,
   },
+  autoplay: {
+    delay: 2000,
+  },
   breakpoints: {
     0: {
-      slidesPerView: 2,
+      slidesPerView: 1,
       spaceBetween: 10,
     },
     500: {
-      slidesPerView: 3,
+      slidesPerView: 2,
       spaceBetween: 10,
     },
     768: {
-      slidesPerView: 6,
+      slidesPerView: 2,
       spaceBetween: 10,
     },
     1024: {
-      slidesPerView: 5,
-      spaceBetween: 5,
+      slidesPerView: 4,
+      spaceBetween: 20,
     },
   },
 });
