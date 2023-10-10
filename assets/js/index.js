@@ -22,7 +22,7 @@ var swiper = new Swiper('.support-company-swiper', {
       spaceBetween: 10,
     },
     1024: {
-      slidesPerView: 6,
+      slidesPerView: 5,
       spaceBetween: 5,
     },
   },

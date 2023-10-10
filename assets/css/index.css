@@ -343,3 +343,31 @@ nav li a.active {
   transition: 0.3s;
 }
 /* End Achive */
+.swiper-wrapper {
+  padding-top: 110px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 12px !important;
+  font-weight: bold !important;
+  color: white;
+
+  /* background-color: white; */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  top: 0;
+  background-color: var(--primary-color-hover);
+  margin-top: 0;
+  height: 38px !important;
+  -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+          border-radius: 5px;
+}
+
+/* .swiper-button-next {
+  right: 45px !important;
+  left: auto;
+} */
