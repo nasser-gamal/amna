@@ -40,14 +40,96 @@
           <div
             class="sign-btns d-flex gap-5 mt-3 mb-1 mx-auto my-md-0 mx-md-0 text-center"
           >
-          <a class=" fw-bold" href="register.html">
-            <i class="fa-solid fa-user-plus"></i>
-            التسجيل
-          </a>
-          <a class="fw-bold" href="login.html">
-            <i class="fa-solid fa-right-from-bracket fa-rotate-270 fa-sm"></i>
-            تسجيل الدخول
-          </a>          </div>
+            <a class="fw-bold" href="register.html">
+              <i class="fa-solid fa-user-plus"></i>
+              التسجيل
+            </a>
+            <a class="fw-bold" href="login.html">
+              <i class="fa-solid fa-right-from-bracket fa-rotate-270 fa-sm"></i>
+              تسجيل الدخول
+            </a>
+            <div class="user-dropdown">
+              <div
+                style="cursor: pointer"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img
+                  style="width: 30px"
+                  class="img-fluid"
+                  src="assets/images/profile.png"
+                  alt="profile.png"
+                />
+                <span class="mx-1">اسم الحساب</span>
+                <img
+                  style="transform: rotate(90deg); color: black; width: 12px"
+                  class="dropw-arrow img-fluid"
+                  src="assets/images/black-arrow.png"
+                  alt="black-arrow.png"
+                />
+              </div>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item text-start" href="profile.html">
+                    <img
+                      style="width: 20px"
+                      class="img-fluid"
+                      src="assets/images/profile.png"
+                      alt="profile.png"
+                    />
+                    <span class="me-1">الملف الشخصي</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-start" href="terms.html">
+                    <img
+                      style="width: 20px"
+                      class="img-fluid"
+                      src="assets/images/test.png"
+                      alt="test.png"
+                    />
+                    <span class="me-1"> امتحاناتي </span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-start" href="achives.html">
+                    <img
+                      style="width: 20px"
+                      class="img-fluid"
+                      src="assets/images/gold-medal.png"
+                      alt="gold-medal.png"
+                    />
+                    <span class="me-1"> انجازاتي </span>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item text-start" href="edit-profile.html">
+                    <img
+                      style="width: 20px"
+                      class="img-fluid"
+                      src="assets/images/cogwheel.png"
+                      alt="cogwheel.png"
+                    />
+                    <span class="me-1">اعدادت الحساب </span>
+                  </a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider p-0" />
+                </li>
+                <li>
+                  <a class="dropdown-item text-start m-0" href="#">
+                    <img
+                      style="width: 20px"
+                      class="img-fluid"
+                      src="assets/images/logout.png"
+                      alt="logout.png"
+                    />
+                    <span class="me-1"> تسجيل خروج </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -56,9 +138,9 @@
     <nav
       class="navbar navbar-expand-lg navbar-light bg-light position-sticky top-0"
     >
-    <div class="container justify-content-end">
-      <button
-        style="box-shadow: none;"
+      <div class="container justify-content-end">
+        <button
+          style="box-shadow: none"
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -102,15 +184,29 @@
     <!-- start  -->
     <div class="logos pt-2 pb-1">
       <div class="container">
-        <div class="row justify-content-between align-items-center">
+        <div
+          class="row justify-content-between profile-info-row px-1 align-items-center"
+        >
           <div class="col-3 col-md-2">
-            <img class="img-fluid" src="assets/images/oman.png" alt="oman.png" />
+            <img
+              class="img-fluid"
+              src="assets/images/oman.png"
+              alt="oman.png"
+            />
           </div>
           <div class="col-3 col-md-2">
-            <img class="img-fluid" src="assets/images/achieve.png" alt="achieve.png" />
+            <img
+              class="img-fluid"
+              src="assets/images/achieve.png"
+              alt="achieve.png"
+            />
           </div>
           <div class="col-3 col-md-2">
-            <img class="img-fluid" src="assets/images/amna.png" alt="amna.png" />
+            <img
+              class="img-fluid"
+              src="assets/images/amna.png"
+              alt="amna.png"
+            />
           </div>
         </div>
       </div>
@@ -119,140 +215,91 @@
 
     <section class="profile sec-padding pb-5">
       <div class="container">
-
         <div class="profile-content">
-           <div class="text-center">
+          <div class="text-center">
             <h5
               class="sec-title mx-auto rounded-3 text-white position-relative"
             >
-                صفحة الطالب
+              صفحة الطالب
             </h5>
-          </div> 
-          <div class="row justify-content-between">
-            <div class="col-2 links p-0">
-              <ul>
-                <li>
-                  <a class="py-3 d-block active" href="profile.html">تعديل البيانات</a>
-                </li>
-                <li>
-                  <a class="py-3 d-block"  href="reset-password.html">استعادة كلمة المرور</a>
-                </li>
-                <li>
-                  <a class="py-3 d-block"  href="terms.html">امتحاناتي</a>
-                </li>
-                <li>
-                  <a class="py-3 d-block"  href="achives.html">انجازاتي</a>
-                </li>
-              </ul>
+          </div>
+          <div class="col-2 links p-0 d-md-none">
+            <ul>
+              <li>
+                <a class="py-3 d-block" href="profile.html">تعديل البيانات</a>
+              </li>
+              <li>
+                <a class="py-3 d-block active" href="reset-password.html"
+                  >استعادة كلمة المرور</a
+                >
+              </li>
+              <li>
+                <a class="py-3 d-block" href="terms.html">امتحاناتي</a>
+              </li>
+              <li>
+                <a class="py-3 d-block" href="achives.html">انجازاتي</a>
+              </li>
+            </ul>
+          </div>
+          <div class="row gap-4 sec-padding align-items-start">
+            <div class="profile-img col-12 col-md-4 py-3 text-center">
+              <div class="image">
+                <img
+                  class="img-fluid w-100 h-100"
+                  src="assets/images/profile.png"
+                  alt="profile.png"
+                />
+              </div>
+              <h5 class="pt-3 pb-4">اسم الحساب</h5>
+              <a class="d-block" href="change-password.html">
+                <button class="btn">تغير كلمة السر</button>
+              </a>
             </div>
-            <div class="form col-12 col-md-9">
-              <h5 class="mb-5">
-                  تعديل البيانات 
-              </h5>
-              <form action="">
-               <div class="row">
-                <div class="mb-3 col-12 col-sm-6 col-md-6">
-                  <label for="exampleFormControlInput1" class="form-label">الجنس</label>
-                  </label>
-                  <select class="form-select" aria-label="Default select example">
-                    <option value="male">ذكر</option>
-                    <option value="female">انثي</option>
-                  </select>
-                </div>
-                <div class="mb-3 col-12 col-sm-6 col-md-6">
-                  <label for="exampleFormControlInput1" class="form-label">
-                    اسم الطالب
-                  </label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                  />
-                </div>
-                <div class="mb-3 col-12 col-sm-6 col-md-6">
-                  <label for="exampleFormControlInput1" class="form-label">
-                    المدرسة 
-                  </label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                  />
-                </div>
-                <div class="mb-3 col-12 col-sm-6 col-md-6">
-                  <label for="exampleFormControlInput1" class="form-label">
-                    الصف 
-                  </label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                  />
-                </div>
-                <div class="mb-3 col-12 col-sm-6 col-md-6">
-                  <label for="exampleFormControlInput1" class="form-label">
-                    الشعبة 
-                  </label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                  />
-                </div>
-                <div class="mb-3 col-12 col-sm-6 col-md-6">
-                  <label for="exampleFormControlInput1" class="form-label">
-                    اسم ولي الأمر 
-                  </label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                  />
-                </div>
-                <div class="mb-3 col-12 col-sm-6 col-md-6">
-                  <label for="exampleFormControlInput1" class="form-label">
-                     صلة القرابة 
-                  </label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                  />
-                </div>
-                <div class="mb-3 col-12 col-sm-6 col-md-6">
-                  <label for="exampleFormControlInput1" class="form-label">
-                     رقم الهاتف 
-                  </label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                  />
-                </div>
-                <div class="mb-3 col-12 col-sm-6 col-md-6">
-                  <label for="exampleFormControlInput1" class="form-label">
-                     البريد الالكتروني
-                  </label>
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                  />
-                </div>
-               </div>
-               <div class="form-btns py-3 text-center">
-                  <button class="mx-2 btn" type="submit">تعديل البيانات</button>
-                  <button class="mx-2 btn" type="reset">حذف البيانات</button>
-               </div>
-              </form>
+            <div class="profile-info col-12 col-md-7">
+              <div class="row justify-content-between profile-info-row px-1">
+                <span class="col-3"> اسم الطالب </span>
+                <span class="col-9"> محمد احمد محمد </span>
+              </div>
+              <div class="row justify-content-between profile-info-row px-1">
+                <span class="col-3"> الجنس </span>
+                <span class="col-9"> ذكر </span>
+              </div>
+              <div class="row justify-content-between profile-info-row px-1">
+                <span class="col-3"> المدرسة </span>
+                <span class="col-9"> المدرسة </span>
+              </div>
+              <div class="row justify-content-between profile-info-row px-1">
+                <span class="col-3"> الصف </span>
+                <span class="col-9"> الصف </span>
+              </div>
+              <div class="row justify-content-between profile-info-row px-1">
+                <span class="col-3"> الشعبة </span>
+                <span class="col-9"> الشعبة </span>
+              </div>
+              <div class="row justify-content-between profile-info-row px-1">
+                <span class="col-3"> اسم ولي الأمر </span>
+                <span class="col-9"> اسم ولي الأمر </span>
+              </div>
+              <div class="row justify-content-between profile-info-row px-1">
+                <span class="col-3"> صلة القرابة </span>
+                <span class="col-9"> صلة القرابة </span>
+              </div>
+              <div class="row justify-content-between profile-info-row px-1">
+                <span class="col-3">رقم الهاتف</span>
+                <span class="col-9">0123123123</span>
+              </div>
+              <div class="row justify-content-between profile-info-row px-1">
+                <span class="col-3">البريد الالكتروني</span>
+                <span class="col-9">exampl@examle.com</span>
+              </div>
+              <a class="d-block w-100 py-4" href="edit-profile.html">
+                <button class="btn w-100">تعديل بيانات الطالب</button>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </section>
-  
-
-       
 
     <!-- Start Footer  -->
     <div class="footer">
@@ -304,7 +351,7 @@
               <li></li>
             </ul>
           </div>
-          <div class="col-6 col-md-4 mt-4 mt-md-0  text-white">
+          <div class="col-6 col-md-4 mt-4 mt-md-0 text-white">
             <h4 class="py-2">الروابط</h4>
             <ul class="links">
               <li>
@@ -387,7 +434,7 @@
               </li>
             </ul>
           </div>
-          <div class="col-6 col-md-4 mt-4 mt-md-0  text-white">
+          <div class="col-6 col-md-4 mt-4 mt-md-0 text-white">
             <h4 class="py-2">روابط أخري</h4>
             <ul class="links">
               <li>
@@ -449,7 +496,7 @@
       <div class="footer-end mt-4 py-2">
         <div class="container">
           <div
-            class="foot d-flex  flex-wrap justify-content-center justify-content-md-between align-items-center p-2"
+            class="foot d-flex flex-wrap justify-content-center justify-content-md-between align-items-center p-2"
           >
             <div class="text-dark-50">
               Designed <span class="fw-bold">xxxx</span>
@@ -463,8 +510,6 @@
       </div>
     </div>
     <!-- End Footer  -->
-
-
 
     <!-- Bootstrap JS Bundle  -->
     <script src="assets/js/bootstrap.bundle.js"></script>

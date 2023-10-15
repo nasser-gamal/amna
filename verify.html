@@ -57,9 +57,9 @@
     <nav
       class="navbar navbar-expand-lg navbar-light bg-light position-sticky top-0"
     >
-    <div class="container justify-content-end">
-      <button
-        style="box-shadow: none;"
+      <div class="container justify-content-end">
+        <button
+          style="box-shadow: none"
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -83,7 +83,7 @@
             <li class="nav-item">
               <a class="nav-link" href="about.html">من نحن</a>
             </li>
-       
+     
             <li class="nav-item">
               <a class="nav-link" href="news.html">اخبار المبادرة</a>
             </li>
@@ -98,48 +98,71 @@
       </div>
     </nav>
     <!-- end Nav  -->
-    <section class="login">
+    <section class="verify">
       <div class="row justify-content-between login-sections p-0 m-0">
-        <div class="left-sec col-6 d-none d-md-flex">
-          <img
-            class="img-fluid"
-            src="assets/images/undraw_working_re_ddwy.svg"
-            alt="undraw_working_re_ddwy.svg"
-          />
-        </div>
-        <div class="login-content right-sec  col-6">
-          <div class="text-center"></div>
-          <div class="form">
+        <div class="login-content right-sec bg-linear col-12">
+          <div class="form pt-0">
             <form action="">
               <div class="">
-                <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label">
-                    البريد الالكتروني
-                  </label>
+                <h5 class="py-4 text-center">ادخال رمز التحقق</h5>
+                <span class="d-block text-center pb-3">
+                  ادخل رمز التحقق المرسل علي البريد الالكتروني
+                  <span class="primary-color fw-bold">
+                    exmaple@exmaple.com</span
+                  >
+                </span>
+                <div
+                  class="mb-3 d-flex gap-3 justify-content-center pt-3"
+                  style="direction: ltr"
+                >
                   <input
-                    type="text"
-                    class="form-control"
-                    id="exampleFormControlInput1"
+                    type="number"
+                    class="verify-input text-center"
+                    min="0"
+                    max="9"
+                    placeholder="0"
+                  />
+                  <input
+                    type="number"
+                    class="verify-input text-center"
+                    min="0"
+                    max="9"
+                    placeholder="0"
+                  />
+                  <input
+                    type="number"
+                    class="verify-input text-center"
+                    min="0"
+                    max="9"
+                    placeholder="0"
+                  />
+                  <input
+                    type="number"
+                    class="verify-input text-center"
+                    min="0"
+                    max="9"
+                    placeholder="0"
                   />
                 </div>
-                <div class="mb-3">
-                  <label for="exampleFormControlInput1" class="form-label">
-                    الرقم السري
-                  </label>
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="exampleFormControlInput1"
-                  />
-                </div>
-              </div>
-              <div class="forget-password-btn pt-1">
-                <a href="forget-password.html">
-                  هل نسيت كلمة السر ؟
-                </a>
               </div>
               <div class="form-btns py-3 text-center">
-                <button class="mx-2 btn" type="submit">تسجيل الدخول</button>
+                <a href="reset-password.html">
+                  <button class="mx-2 btn verify-btn" type="button">
+                    ارسال
+                  </button>
+                </a>
+              </div>
+              <div class="new-code text-center py-3">
+                <span>
+                  إذا لم تستلم رمز التحقق
+                  <a href="" class="primary-color"> اعادة ارسال الكود </a>
+                </span>
+                <a
+                  class="d-block text-center py-2 primary-color link-underline"
+                  href="forget-password.html "
+                >
+                  تغير البريد الالكتروني
+                </a>
               </div>
             </form>
           </div>
@@ -149,5 +172,21 @@
     <!-- end support-company  -->
     <!-- Bootstrap JS Bundle  -->
     <script src="assets/js/bootstrap.bundle.js"></script>
+
+    <script>
+      const codes = document.querySelectorAll('.verify-input');
+      codes[0].focus();
+
+      codes.forEach((code, index) => {
+        code.addEventListener('keydown', (e) => {
+          if (e.key >= 0 && e.key <= 9) {
+            codes[index].value = '';
+            setTimeout(() => codes[index + 1].focus(), 10);
+          } else if (e.key === 'Backspace') {
+            setTimeout(() => codes[index - 1].focus(), 10);
+          }
+        });
+      });
+    </script>
   </body>
 </html>
