@@ -18,6 +18,9 @@
       rel="stylesheet"
     />
 
+    <!-- AOS Library  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- CDN For Swpier js  -->
     <link
       rel="stylesheet"
@@ -114,6 +117,17 @@
                   </a>
                 </li>
                 <li>
+                  <a class="dropdown-item text-start" href="reports.html">
+                    <img
+                      style="width: 20px"
+                      class="img-fluid"
+                      src="assets/images/report.png"
+                      alt="report.png"
+                    />
+                    <span class="me-1">التقارير</span>
+                  </a>
+                </li>
+                <li>
                   <hr class="dropdown-divider p-0" />
                 </li>
                 <li>
@@ -164,9 +178,6 @@
             <li class="nav-item">
               <a class="nav-link" href="about.html">من نحن</a>
             </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="profile.html">الشخصية</a>
-            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="news.html">اخبار المبادرة</a>
             </li>
@@ -211,9 +222,11 @@
     </div>
     <!-- end -->
     <!-- start landing  -->
-    <section class="landing text-center text-muted text-md-end">
+    <section
+      class="landing text-center text-muted text-md-end d-flex align-items-center"
+    >
       <div class="container">
-        <div class="row justify-content-center align-items-center">
+        <div class="row justify-content-center align-items-center pt-5 pt-md-0">
           <div
             class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12 pr-sm-0 pr-2 d-flex align-items-center"
           >
@@ -239,14 +252,14 @@
               </div>
               <div class="my-btn d-inline-block mx-1">
                 <a href="login.html">
-                  <button class="btn">تفحص الكورسات</button>
+                  <button class="btn btn-hover">تفحص الكورسات</button>
                 </a>
               </div>
               <!-- / btn -->
             </div>
           </div>
           <!-- /col -->
-          <div class="col-12">
+          <div class="col-12 col-lg-5">
             <div class="slider-img1 pl-70 z-index1 position-relative">
               <img class="img-fluid" src="assets/images/5891.jpg" alt="image" />
             </div>
@@ -257,7 +270,13 @@
     <!-- end landing  -->
 
     <!-- Start support-company   -->
-    <section class="support-company sec-padding pb-5">
+    <section
+      class="support-company sec-padding pb-5"
+      data-aos="fade-up"
+      data-aos-delay="50"
+      data-aos-duration="500"
+      data-aos-easing="ease-in-out"
+    >
       <div class="container">
         <div class="text-center">
           <h5 class="sec-title mx-auto rounded-3 text-white position-relative">
@@ -348,8 +367,14 @@
 
     <section class="experience sec-padding">
       <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-6">
+        <div class="row align-items-center">
+          <div
+            class="col-12 col-md-6"
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+          >
             <h2>
               <span class="fw-bold primary-color">20 عاما</span>
               في مجال
@@ -362,7 +387,13 @@
             <a href="about.html" class="primary-color fw-bold"> المزيد عننا </a>
           </div>
 
-          <div class="col-12 col-md-6 pt-5 pt-md-0">
+          <div
+            class="col-12 col-md-6 pt-5 pt-md-0"
+            data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+          >
             <div class="row gap-md-3 stats">
               <div
                 class="col-8 m-auto col-md-5 info-box d-flex flex-column justify-content-center align-items-center text-center"
@@ -416,6 +447,158 @@
                 >
                 <h5>عدد الساعات</h5>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-news pb-5">
+      <div class="container">
+        <div class="text-center">
+          <h5 class="sec-title mx-auto rounded-3 text-white position-relative">
+            أخر الاخبار واالاحداث
+          </h5>
+        </div>
+        <div class="d-flex flex-wrap gap-3 pt-5">
+          <div
+            class="news-box d-flex gap-1 flex-wrap flex-lg-nowrap flex-column-reverse flex-lg-row"
+            data-aos="fade-left"
+            data-aos-delay="50"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+          >
+            <div
+              class="news-content px-3 d-flex justify-content-center align-items-center"
+            >
+              <div>
+                <span>خبر جديد</span>
+                <h5 class="py-2">
+                  Design and development for the web and internet
+                </h5>
+                <p>
+                  At the Training ExLorem ipsum noe amet, consectetur
+                  adipisicing elit sed do eiusmod tempor incidid
+                </p>
+                <a
+                  href=""
+                  class="primary-color text-start d-block py-2 py-lg-0"
+                >
+                  المزيد
+                </a>
+              </div>
+            </div>
+            <div class="image overflow-hidden">
+              <img
+                class="img-fluid"
+                src="assets/images/home1-news-img1.jpg"
+                alt="home1-news-img1.jpg"
+              />
+            </div>
+          </div>
+          <div
+            class="news-box d-flex gap-1 flex-wrap flex-lg-nowrap flex-column-reverse flex-lg-row"
+            data-aos="fade-right"
+            data-aos-delay="50"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+          >
+            <div
+              class="news-content px-3 d-flex justify-content-center align-items-center"
+            >
+              <div>
+                <span>خبر جديد</span>
+                <h5 class="py-2">
+                  Design and development for the web and internet
+                </h5>
+                <p>
+                  At the Training ExLorem ipsum noe amet, consectetur
+                  adipisicing elit sed do eiusmod tempor incidid
+                </p>
+                <a
+                  href=""
+                  class="primary-color text-start d-block py-2 py-lg-0"
+                >
+                  المزيد
+                </a>
+              </div>
+            </div>
+            <div class="image overflow-hidden">
+              <img
+                class="img-fluid"
+                src="assets/images/home1-news-img3.jpg"
+                alt="home1-news-img1.jpg"
+              />
+            </div>
+          </div>
+          <div
+            class="news-box d-flex gap-1 flex-wrap flex-lg-nowrap flex-column-reverse flex-lg-row"
+            data-aos="fade-down"
+            data-aos-delay="50"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+          >
+            <div
+              class="news-content px-3 d-flex justify-content-center align-items-center"
+            >
+              <div>
+                <span>خبر جديد</span>
+                <h5 class="py-2">
+                  Design and development for the web and internet
+                </h5>
+                <p>
+                  At the Training ExLorem ipsum noe amet, consectetur
+                  adipisicing elit sed do eiusmod tempor incidid
+                </p>
+                <a
+                  href=""
+                  class="primary-color text-start d-block py-2 py-lg-0"
+                >
+                  المزيد
+                </a>
+              </div>
+            </div>
+            <div class="image overflow-hidden">
+              <img
+                class="img-fluid"
+                src="assets/images/home1-news-img3.jpg"
+                alt="home1-news-img1.jpg"
+              />
+            </div>
+          </div>
+          <div
+            class="news-box d-flex gap-1 flex-wrap flex-lg-nowrap flex-column-reverse flex-lg-row"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+          >
+            <div
+              class="news-content px-3 d-flex justify-content-center align-items-center"
+            >
+              <div>
+                <span>خبر جديد</span>
+                <h5 class="py-2">
+                  Design and development for the web and internet
+                </h5>
+                <p>
+                  At the Training ExLorem ipsum noe amet, consectetur
+                  adipisicing elit sed do eiusmod tempor incidid
+                </p>
+                <a
+                  href=""
+                  class="primary-color text-start d-block py-2 py-lg-0"
+                >
+                  المزيد
+                </a>
+              </div>
+            </div>
+            <div class="image overflow-hidden">
+              <img
+                class="img-fluid"
+                src="assets/images/home1-news-img1.jpg"
+                alt="home1-news-img1.jpg"
+              />
             </div>
           </div>
         </div>
@@ -638,5 +821,11 @@
     <script src="https://cdn.jsdelivr.xyz/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- Main JS File  -->
     <script src="assets/js/index.js"></script>
+
+    <!-- // AOS Library  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

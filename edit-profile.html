@@ -24,6 +24,9 @@
       href="https://cdn.jsdelivr.xyz/npm/swiper@9/swiper-bundle.min.css"
     />
 
+    <!-- AOS Library  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>amna</title>
   </head>
   <body>
@@ -114,6 +117,17 @@
                   </a>
                 </li>
                 <li>
+                  <a class="dropdown-item text-start" href="reports.html">
+                    <img
+                      style="width: 20px"
+                      class="img-fluid"
+                      src="assets/images/report.png"
+                      alt="report.png"
+                    />
+                    <span class="me-1">التقارير</span>
+                  </a>
+                </li>
+                <li>
                   <hr class="dropdown-divider p-0" />
                 </li>
                 <li>
@@ -164,9 +178,7 @@
             <li class="nav-item">
               <a class="nav-link" href="about.html">من نحن</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="profile.html">الشخصية</a>
-            </li>
+
             <li class="nav-item">
               <a class="nav-link" href="news.html">اخبار المبادرة</a>
             </li>
@@ -231,7 +243,7 @@
                 >
               </li>
               <li>
-                <a class="py-3 d-block " href="reset-password.html"
+                <a class="py-3 d-block" href="reset-password.html"
                   >استعادة كلمة المرور</a
                 >
               </li>
@@ -244,7 +256,13 @@
             </ul>
           </div>
           <div class="row gap-4 sec-padding align-items-start">
-            <div class="profile-img col-12 col-md-4 py-3 text-center">
+            <div
+              class="profile-img col-12 col-md-4 py-3 text-center"
+              data-aos="fade-left"
+              data-aos-delay="50"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-out"
+            >
               <div class="image">
                 <img
                   class="img-fluid w-100 h-100"
@@ -257,7 +275,13 @@
                 <button class="btn">تغير كلمة السر</button>
               </a>
             </div>
-            <div class="profile-info col-12 col-md-7">
+            <div
+              class="profile-info col-12 col-md-7"
+              data-aos="fade-right"
+              data-aos-delay="50"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-out"
+            >
               <form action="">
                 <div class="row justify-content-between profile-info-row px-1">
                   <div class="col-3">
@@ -610,5 +634,11 @@
 
     <!-- Bootstrap JS Bundle  -->
     <script src="assets/js/bootstrap.bundle.js"></script>
+
+    <!-- // AOS Library  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

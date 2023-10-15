@@ -24,6 +24,9 @@
       href="https://cdn.jsdelivr.xyz/npm/swiper@9/swiper-bundle.min.css"
     />
 
+    <!-- AOS Library  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>amna</title>
   </head>
   <body>
@@ -165,9 +168,6 @@
               <a class="nav-link" href="about.html">من نحن</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="profile.html">الشخصية</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="news.html">اخبار المبادرة</a>
             </li>
             <li class="nav-item">
@@ -226,10 +226,12 @@
           <div class="col-2 links p-0 d-md-none">
             <ul>
               <li>
-                <a class="py-3 d-block active" href="profile.html">تعديل البيانات</a>
+                <a class="py-3 d-block active" href="profile.html"
+                  >تعديل البيانات</a
+                >
               </li>
               <li>
-                <a class="py-3 d-block " href="reset-password.html"
+                <a class="py-3 d-block" href="reset-password.html"
                   >استعادة كلمة المرور</a
                 >
               </li>
@@ -242,7 +244,13 @@
             </ul>
           </div>
           <div class="row gap-4 sec-padding align-items-start">
-            <div class="profile-img col-12 col-md-4 py-3 text-center">
+            <div
+              class="profile-img col-12 col-md-4 py-3 text-center"
+              data-aos="fade-left"
+              data-aos-delay="50"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-out"
+            >
               <div class="image">
                 <img
                   class="img-fluid w-100 h-100"
@@ -255,7 +263,13 @@
                 <button class="btn">تغير كلمة السر</button>
               </a>
             </div>
-            <div class="profile-info col-12 col-md-7">
+            <div
+              class="profile-info col-12 col-md-7"
+              data-aos="fade-right"
+              data-aos-delay="50"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-out"
+            >
               <div class="row justify-content-between profile-info-row px-1">
                 <span class="col-3"> اسم الطالب </span>
                 <span class="col-9"> محمد احمد محمد </span>
@@ -513,5 +527,11 @@
 
     <!-- Bootstrap JS Bundle  -->
     <script src="assets/js/bootstrap.bundle.js"></script>
+
+    <!-- // AOS Library  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
