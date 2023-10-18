@@ -623,7 +623,7 @@ nav li a.active {
 }
 .achive-card a {
   display: block;
-  min-height: 220px;
+  min-height: 180px;
 }
 .achive-card.gold {
   border-color: gold;
