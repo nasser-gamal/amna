@@ -619,9 +619,10 @@ nav li a.active {
   overflow: hidden;
   box-shadow: 8px 8px 9px 7px rgba(174, 174, 192, 0.4), -5px -5px 15px 7px #fff;
   border: 8px solid;
+  
 }
 .achive-card a {
-
+  display: block;
   min-height: 220px;
 }
 .achive-card.gold {
@@ -689,8 +690,8 @@ nav li a.active {
     margin-bottom: 30px;
   }
   .achive-card .thumbnail {
-    box-shadow: none;
-    border: 1px solid #d2d2d2;
+    /* box-shadow: none; */
+    /* border: 1px solid #d2d2d2; */
     /* transform: none; */
   }
 }
