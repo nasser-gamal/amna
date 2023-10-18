@@ -619,7 +619,6 @@ nav li a.active {
   overflow: hidden;
   box-shadow: 8px 8px 9px 7px rgba(174, 174, 192, 0.4), -5px -5px 15px 7px #fff;
   border: 8px solid;
-  
 }
 .achive-card a {
   display: block;
@@ -699,7 +698,7 @@ nav li a.active {
 .achive-card .info {
   position: absolute;
   bottom: 0;
-  background-color: rgba(43, 38, 38, 0.699);
+  background-color: rgba(43, 38, 38, 0.473);
   width: 100%;
   color: white;
   font-size: 14px;
